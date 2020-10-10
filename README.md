@@ -1,7 +1,9 @@
 # quake-like-terminal
 How to make quake-like terminal with openbox
 
-Preview:
+* Use together with your usual terminal but with different appearance settings
+* You can reopen this terminal on any of your desktops
+* And it saves history after reopening
 
 ![quake-like-terminal](quake-like-terminal.gif)
 
