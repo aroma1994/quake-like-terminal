@@ -24,14 +24,14 @@ How to make quake-like terminal with openbox
 <keybind key="C-e">
 	<action name="If">
 		<query>
-			<title>quake</title>
+			<title>quaketerm</title>
 		</query>
 		<then>
 			<action name="Iconify"/>
 		</then>
 		<else>
 			<action name="Execute">
-				<command>sh -c "if [[ `wmctrl -l | awk '/quake/ {print $1}'` ]]; then xdotool set_desktop_for_window $(wmctrl -l | awk '/quake/ {print $1}' | head -1) $(wmctrl -d | grep '*' | cut -d ' ' -f1) windowactivate $(wmctrl -l | awk '/quake/ {print $1}' | head -1); else `termite -t quake --name="quake"`; fi"</command>
+				<command>sh -c "if [[ `wmctrl -l | awk '/quaketerm/ {print $1}'` ]]; then xdotool set_desktop_for_window $(wmctrl -l | awk '/quaketerm/ {print $1}' | head -1) $(wmctrl -d | grep '*' | cut -d ' ' -f1) windowactivate $(wmctrl -l | awk '/quaketerm/ {print $1}' | head -1); else `termite -t quaketerm --name="quaketerm"`; fi"</command>
 			</action>
 		</else>
 	</action>
@@ -42,7 +42,7 @@ How to make quake-like terminal with openbox
 ### Add these strings to your \<applications>...\</applications> section in openbox/rc.xml file:
 
 ```xml
-<application name="quake">
+<application name="quaketerm">
 	<layer>above</layer>
 	<fullscreen>no</fullscreen>
 	<decor>no</decor>
