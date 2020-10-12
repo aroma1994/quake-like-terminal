@@ -10,6 +10,7 @@ How to make quake-like terminal with openbox
 ## Dependencies
 
 * `openbox`
+* `bash`
 * `termite`
 * `xdotool`
 * `wmctrl`
